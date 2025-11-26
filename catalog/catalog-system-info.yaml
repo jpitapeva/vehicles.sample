@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Case
+  description: Project vehicles samples 
+spec:
+  lifecycle: Experimental
+  owner: jpitapeva
+  domain: domain

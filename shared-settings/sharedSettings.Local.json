@@ -1,0 +1,30 @@
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.Dynatrace" ],
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "Enrich": [ "WithProcessId" ],
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "outputTemplate": "{Timestamp:HH:mm:ss.ffff} [{Level:u3}] {Message} {Exception}{NewLine}",
+          "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Code, Serilog.Sinks.Console"
+        }
+      }
+    ]
+  },
+  "ConnectionStrings": {
+    "SqlServer": [
+      {
+        "Name": "Case",
+        "ConnectionString": "CHANGE"
+      }
+    ]
+  }
+}

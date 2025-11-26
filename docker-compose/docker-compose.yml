@@ -1,0 +1,6 @@
+services:
+  case.webapi:
+    image: nome_recurso_container_register/case.webapi
+    build:
+      context: ../
+      dockerfile: src/Case.WebApi/Dockerfile

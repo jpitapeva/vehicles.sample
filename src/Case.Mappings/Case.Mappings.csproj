@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SonarQubeSetting Include="sonar.exclusions">
+      <Value>ServicesExtensions.cs</Value>
+    </SonarQubeSetting>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Case.Domain\Case.Domain.csproj" />
+    <ProjectReference Include="..\Case.Infra.Data.Sql\Case.Infra.Data.Sql.csproj" />
+    <ProjectReference Include="..\Case.Model\Case.Model.csproj" />
+  </ItemGroup>
+
+</Project>

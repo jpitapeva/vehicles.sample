@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: Case
+  description: Case of vehicles
+  tags:
+    - dotnet8
+    - csharp 
+    - bff
+  links:
+    - url: https://github.com/jpitapeva/vehicles_poc
+      title: Repositorio
+      icon: code
+      type: Repository
+  annotations:
+    dev.azure.com/project-repo: Case
+    sonarqube.org/project-key: Case    
+spec:
+  type: openapi 
+  system: Case 
+  lifecycle: Experimental
+  owner: jpitapeva

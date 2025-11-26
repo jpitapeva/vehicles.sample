@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<SonarQubeTestProject>false</SonarQubeTestProject>
+    <NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <SonarQubeSetting Include="sonar.exclusions">
+      <Value>ServicesExtensions.cs</Value>
+    </SonarQubeSetting>
+  </ItemGroup>
+
+  <ItemGroup>
+		<ProjectReference Include="..\Case.Model\Case.Model.csproj" />
+		<ProjectReference Include="..\Case.Domain\Case.Domain.csproj" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validator\ViewModel\" />
+  </ItemGroup>
+
+</Project>
