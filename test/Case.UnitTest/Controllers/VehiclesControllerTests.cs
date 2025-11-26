@@ -1,5 +1,5 @@
 using Case.Application.Interfaces;
-using Case.Model.ViewModel.Truck;
+using Case.Model.ViewModel.Vehicles;
 using Case.WebApi.Controllers.v1;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
@@ -116,9 +116,9 @@ namespace Case.UnitTest.Controllers
         public async Task UpdateVehicleColor_ReturnsNoContent_WhenServiceReturnsTrue()
         {
             // Arrange
-            var request = new Case.Model.ViewModel.Vehicules.VehicleUpdateColorViewModel.Request();
+            var request = new Case.Model.ViewModel.Vehicles.VehicleUpdateColorViewModel.Request();
             _vehiclesAppMock
-                .Setup(x => x.UpdateVehicleColorAppAsync(It.IsAny<Case.Model.ViewModel.Vehicules.VehicleUpdateColorViewModel.Request>(), It.IsAny<CancellationToken>()))
+                .Setup(x => x.UpdateVehicleColorAppAsync(It.IsAny<Case.Model.ViewModel.Vehicles.VehicleUpdateColorViewModel.Request>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(true);
 
             // Act
@@ -132,9 +132,9 @@ namespace Case.UnitTest.Controllers
         public async Task UpdateVehicleColor_ReturnsNotFound_WhenServiceReturnsFalse()
         {
             // Arrange
-            var request = new Case.Model.ViewModel.Vehicules.VehicleUpdateColorViewModel.Request();
+            var request = new Case.Model.ViewModel.Vehicles.VehicleUpdateColorViewModel.Request();
             _vehiclesAppMock
-                .Setup(x => x.UpdateVehicleColorAppAsync(It.IsAny<Case.Model.ViewModel.Vehicules.VehicleUpdateColorViewModel.Request>(), It.IsAny<CancellationToken>()))
+                .Setup(x => x.UpdateVehicleColorAppAsync(It.IsAny<Case.Model.ViewModel.Vehicles.VehicleUpdateColorViewModel.Request>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(false);
 
             // Act

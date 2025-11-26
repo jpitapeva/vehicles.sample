@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Case.Domain.Entities;
-using Case.Model.ViewModel.Truck;
+using Case.Model.ViewModel.Vehicles;
 
 namespace Case.Mappings.Profiles
 {

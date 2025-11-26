@@ -1,7 +1,6 @@
 ﻿using Asp.Versioning;
 using Case.Application.Interfaces;
-using Case.Model.ViewModel.Truck;
-using Case.Model.ViewModel.Vehicules;
+using Case.Model.ViewModel.Vehicles;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Threading;

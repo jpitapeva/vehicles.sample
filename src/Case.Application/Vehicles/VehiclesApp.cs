@@ -2,8 +2,7 @@
 using Case.Application.Interfaces;
 using Case.Domain.Entities;
 using Case.Domain.Interfaces.Service;
-using Case.Model.ViewModel.Truck;
-using Case.Model.ViewModel.Vehicules;
+using Case.Model.ViewModel.Vehicles;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;

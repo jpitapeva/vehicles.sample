@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Case.Model.ViewModel.Truck
+namespace Case.Model.ViewModel.Vehicles
 {
     public class VehiclesViewModel
     {

@@ -1,7 +1,6 @@
-﻿using Case.Model.ViewModel.Truck;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Case.Model.ViewModel.Vehicules
+namespace Case.Model.ViewModel.Vehicles
 {
     public class VehicleUpdateColorViewModel
     {
